@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.App{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #282c28;
+    color: white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    border: 1px solid grey;
+    color: white;
+    font-size: 20px;
+    height: 80vh;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoForm{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
 }
-
-.App-link {
-  color: #61dafb;
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 18px;
+    margin: 0 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.allTodo{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.singleTodo{
+    background-color: cadetblue;
+    width: 275px;
+    border-radius: 5px;
+    display: flex;
+    margin: 12px 10px;
+    padding: 5px 10px;
+    align-items: center;
+}
+.todoText{
+    flex: 1;
 }
